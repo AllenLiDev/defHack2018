@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Blue Box</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  
+    <ion-card-content (click)="navigateToOtherPage(0)">
+      <h1>Recycle</h1>
+      <img src="../../assets/imgs/recycling-symbol.png"/>
+    </ion-card-content>
+  
+  </ion-card>
+  <ion-card>
+  
+    <ion-card-content (click)="navigateToOtherPage(1)">
+      <h1>Compost</h1>
+      <img src="../../assets/imgs/applecore.jpg"/>
+    </ion-card-content>
+  
+  </ion-card>
+  <ion-card>
+  
+    <ion-card-content (click)="navigateToOtherPage(2)">
+      <h1>Waste</h1>
+      <img src="../../assets/imgs/trash-symbol.jpg"/>
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>

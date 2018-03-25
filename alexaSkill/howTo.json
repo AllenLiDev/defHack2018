@@ -1,0 +1,145 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "blue box",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "Item",
+                            "type": "LIST_OF_ITEMS"
+                        }
+                    ],
+                    "samples": [
+                        "where does {Item} go",
+                        "is {Item} recyclable",
+                        "where do i put {Item}",
+                        "do i recycle {Item}",
+                        "do i trash {Item}",
+                        "is {Item} waste",
+                        "is {Item} compostable"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_ITEMS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "clothing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "take out container"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "glass"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tea bag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "food scrap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plastic bag"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coffee bean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coffee cups",
+                                "synonyms": [
+                                    "coffee cup"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "diaper"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hair"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paper towel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tin foil"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dvd",
+                                "synonyms": [
+                                    "computer",
+                                    "phone",
+                                    "iphone",
+                                    "ipad",
+                                    "electronic",
+                                    "computer"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marker"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "crayon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fish",
+                                "synonyms": [
+                                    "meat",
+                                    "dairy"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
