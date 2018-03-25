@@ -4,11 +4,16 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Blue Box</ion-title>
+    <ion-buttons end>
+      <button>
+        <ion-icon name="mic" item-end></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card id="rec">
   
     <ion-card-content (click)="navigateToOtherPage(0)">
       <h1>Recycle</h1>
@@ -16,19 +21,19 @@
     </ion-card-content>
   
   </ion-card>
-  <ion-card>
+  <ion-card id="com">
   
     <ion-card-content (click)="navigateToOtherPage(1)">
       <h1>Compost</h1>
-      <img src="../../assets/imgs/applecore.jpg"/>
+      <img src="../../assets/imgs/apple.png"/>
     </ion-card-content>
   
   </ion-card>
-  <ion-card>
+  <ion-card id="was">
   
     <ion-card-content (click)="navigateToOtherPage(2)">
       <h1>Waste</h1>
-      <img src="../../assets/imgs/trash-symbol.jpg"/>
+      <img src="../../assets/imgs/garbage.png"/>
     </ion-card-content>
   
   </ion-card>

@@ -46,7 +46,7 @@ export class CompostPage {
     }
 
     this.lineChart = new Chart(this.lineCanvas.nativeElement, {
-      type: 'horizontalBar',
+      type: 'line',
       data: {
           labels: this.labelsArray[set],
           datasets: [

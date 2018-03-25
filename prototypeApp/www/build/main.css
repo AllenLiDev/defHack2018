@@ -25682,6 +25682,18 @@ ion-navbar.toolbar {
   height: 30%;
 }
 
+#rec {
+  background-color: #51a3a3;
+}
+
+#com {
+  background-color: #366d6d;
+}
+
+#was {
+  background-color: #295252;
+}
+
 h1 {
   text-align: center;
 }

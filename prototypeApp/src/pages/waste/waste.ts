@@ -41,12 +41,12 @@ export class WastePage {
       if(set == 2){
         this.dataArray.push(Math.floor(Math.random() * 5 * 30))
       } else {
-        this.dataArray.push(Math.floor(Math.random() * 5));
+        this.dataArray.push(Math.floor(Math.random() * 10));
       }
     }
 
     this.lineChart = new Chart(this.lineCanvas.nativeElement, {
-      type: 'horizontalBar',
+      type: 'line',
       data: {
           labels: this.labelsArray[set],
           datasets: [

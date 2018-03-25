@@ -9,12 +9,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Compost</ion-title>
+    <ion-title>Blue Box</ion-title>
+    <ion-buttons end>
+        <button>
+          <ion-icon name="mic" item-end></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
-
 <ion-content>
+  <h1>Compost</h1>
   <ion-item>
     <ion-label>Number of items Composted</ion-label>
     <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">

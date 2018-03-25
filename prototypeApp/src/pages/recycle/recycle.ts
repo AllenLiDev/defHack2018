@@ -42,7 +42,7 @@ export class RecyclePage {
       if(set == 2){
         this.dataArray.push(Math.floor(Math.random() * 5 * 30))
       } else {
-        this.dataArray.push(Math.floor(Math.random() * 5));
+        this.dataArray.push(Math.floor(Math.random() * 7));
       }
     }
 

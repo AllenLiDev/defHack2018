@@ -23,7 +23,7 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'GreenBox', component: HomePage },
+      { title: 'Blue Box', component: HomePage },
       { title: 'Recycle', component: RecyclePage },
       { title: 'Compost', component: CompostPage },
       { title: 'Waste', component: WastePage }

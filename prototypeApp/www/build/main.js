@@ -84,7 +84,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Blue Box</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-card>\n  \n    <ion-card-content (click)="navigateToOtherPage(0)">\n      <h1>Recycle</h1>\n      <img src="../../assets/imgs/recycling-symbol.png"/>\n    </ion-card-content>\n  \n  </ion-card>\n  <ion-card>\n  \n    <ion-card-content (click)="navigateToOtherPage(1)">\n      <h1>Compost</h1>\n      <img src="../../assets/imgs/applecore.jpg"/>\n    </ion-card-content>\n  \n  </ion-card>\n  <ion-card>\n  \n    <ion-card-content (click)="navigateToOtherPage(2)">\n      <h1>Waste</h1>\n      <img src="../../assets/imgs/trash-symbol.jpg"/>\n    </ion-card-content>\n  \n  </ion-card>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/home/home.html"*/`<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Blue Box</ion-title>\n    <ion-buttons end>\n      <button>\n        <ion-icon name="mic" item-end></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-card id="rec">\n  \n    <ion-card-content (click)="navigateToOtherPage(0)">\n      <h1>Recycle</h1>\n      <img src="../../assets/imgs/recycling-symbol.png"/>\n    </ion-card-content>\n  \n  </ion-card>\n  <ion-card id="com">\n  \n    <ion-card-content (click)="navigateToOtherPage(1)">\n      <h1>Compost</h1>\n      <img src="../../assets/imgs/apple.png"/>\n    </ion-card-content>\n  \n  </ion-card>\n  <ion-card id="was">\n  \n    <ion-card-content (click)="navigateToOtherPage(2)">\n      <h1>Waste</h1>\n      <img src="../../assets/imgs/garbage.png"/>\n    </ion-card-content>\n  \n  </ion-card>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], HomePage);
@@ -490,7 +490,7 @@ var MyApp = (function () {
         this.initializeApp();
         // used for an example of ngFor and navigation
         this.pages = [
-            { title: 'GreenBox', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
+            { title: 'Blue Box', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
             { title: 'Recycle', component: __WEBPACK_IMPORTED_MODULE_5__pages_recycle_recycle__["a" /* RecyclePage */] },
             { title: 'Compost', component: __WEBPACK_IMPORTED_MODULE_6__pages_compost_compost__["a" /* CompostPage */] },
             { title: 'Waste', component: __WEBPACK_IMPORTED_MODULE_7__pages_waste_waste__["a" /* WastePage */] }
@@ -580,7 +580,7 @@ var CompostPage = (function () {
             }
         }
         this.lineChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.lineCanvas.nativeElement, {
-            type: 'horizontalBar',
+            type: 'line',
             data: {
                 labels: this.labelsArray[set],
                 datasets: [
@@ -607,7 +607,7 @@ var CompostPage = (function () {
     ], CompostPage.prototype, "lineCanvas", void 0);
     CompostPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-compost',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/compost/compost.html"*/`<!--\n  Generated template for the CompostPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Compost</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-item>\n    <ion-label>Number of items Composted</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n\n  <canvas #lineCanvas></canvas>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/compost/compost.html"*/,
+            selector: 'page-compost',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/compost/compost.html"*/`<!--\n  Generated template for the CompostPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Blue Box</ion-title>\n    <ion-buttons end>\n        <button>\n          <ion-icon name="mic" item-end></ion-icon>\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <h1>Compost</h1>\n  <ion-item>\n    <ion-label>Number of items Composted</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n\n  <canvas #lineCanvas></canvas>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/compost/compost.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], CompostPage);
@@ -668,7 +668,7 @@ var RecyclePage = (function () {
                 this.dataArray.push(Math.floor(Math.random() * 5 * 30));
             }
             else {
-                this.dataArray.push(Math.floor(Math.random() * 5));
+                this.dataArray.push(Math.floor(Math.random() * 7));
             }
         }
         this.lineChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.lineCanvas.nativeElement, {
@@ -699,7 +699,7 @@ var RecyclePage = (function () {
     ], RecyclePage.prototype, "lineCanvas", void 0);
     RecyclePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-recycle',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/recycle/recycle.html"*/`<!--\n  Generated template for the RecyclePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Recycle</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-item>\n    <ion-label>Number of items recycled</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n  \n  <canvas #lineCanvas></canvas>\n</ion-content>`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/recycle/recycle.html"*/,
+            selector: 'page-recycle',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/recycle/recycle.html"*/`<!--\n  Generated template for the RecyclePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Blue Box</ion-title>\n    <ion-buttons end>\n        <button>\n          <ion-icon name="mic" item-end></ion-icon>\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <h1>Recycle</h1>\n  <ion-item>\n    <ion-label>Number of items recycled</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n  \n  <canvas #lineCanvas></canvas>\n</ion-content>`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/recycle/recycle.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], RecyclePage);
@@ -760,11 +760,11 @@ var WastePage = (function () {
                 this.dataArray.push(Math.floor(Math.random() * 5 * 30));
             }
             else {
-                this.dataArray.push(Math.floor(Math.random() * 5));
+                this.dataArray.push(Math.floor(Math.random() * 10));
             }
         }
         this.lineChart = new __WEBPACK_IMPORTED_MODULE_2_chart_js__["Chart"](this.lineCanvas.nativeElement, {
-            type: 'horizontalBar',
+            type: 'line',
             data: {
                 labels: this.labelsArray[set],
                 datasets: [
@@ -791,7 +791,7 @@ var WastePage = (function () {
     ], WastePage.prototype, "lineCanvas", void 0);
     WastePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-waste',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/waste/waste.html"*/`<!--\n  Generated template for the WastePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Waste</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content>\n  <ion-item>\n    <ion-label>Number of items trashed</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n\n  <canvas #lineCanvas></canvas>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/waste/waste.html"*/,
+            selector: 'page-waste',template:/*ion-inline-start:"/Users/headhuntar/Desktop/greenBox/src/pages/waste/waste.html"*/`<!--\n  Generated template for the WastePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Blue Box</ion-title>\n    <ion-buttons end>\n        <button>\n          <ion-icon name="mic" item-end></ion-icon>\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <h1>Waste</h1>\n  <ion-item>\n    <ion-label>Number of items trashed</ion-label>\n    <ion-select [(ngModel)]="period" (ionChange)="loadChart(period)">\n      <ion-option value="0">Week</ion-option>\n      <ion-option value="1">Month</ion-option>\n      <ion-option value="2">Year</ion-option>\n    </ion-select>\n  </ion-item>\n\n  <canvas #lineCanvas></canvas>\n</ion-content>\n`/*ion-inline-end:"/Users/headhuntar/Desktop/greenBox/src/pages/waste/waste.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
     ], WastePage);
